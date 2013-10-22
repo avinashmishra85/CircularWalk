@@ -9,10 +9,6 @@
 #import "DMDView.h"
 #import "DMDViewController.h"
 
-#define DLog(s, ...)            NSLog(@"<%s:{%d}> = %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
-#define LogRect(msg, rect)      DLog(@"%@ x::%f, y::%f, width::%f, height::%f", msg, rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
-#define LogSize(msg, size)      DLog(@"%@ width::%f, height::%f", msg, size.width, size.height);
-
 @interface DMDViewController ()
 {
     int             step;
